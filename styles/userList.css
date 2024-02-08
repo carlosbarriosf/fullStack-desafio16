@@ -1,0 +1,92 @@
+.userList ul {
+    padding: 0 1.5rem;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.userList__item {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2.5fr 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.userList__field p {
+    text-align: center;
+}
+
+.userList__field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+@media (max-width: 600px) {
+    .userList__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin: 0.75rem auto;
+    }
+    .userList__field {
+        justify-content: start;
+        padding-left: 1rem;
+        gap: 1rem;
+    }
+    .userList__field p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 475px) {
+    .userList__item {
+        width: 80%;
+    }
+}
+
+@media (max-width: 350px) {
+    .userList__item {
+        width: 100%;
+    }
+    .userList ul {
+        padding: 0 0.5rem;
+    }
+}
+
+.userList__item p {
+    margin: 0;
+}
+
+.userList__controls {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.userList__controls button, .userList__field button {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    color: #9f9b9b;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.userList__controls button:hover, .userList__field button:hover {
+    color: white;
+    transform: scale(1.3);
+}
+
+.userList__field button {
+    display: none;
+}

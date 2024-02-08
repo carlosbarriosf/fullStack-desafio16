@@ -1,0 +1,58 @@
+.modal {
+    border: none;
+    background: none;
+    color: white;
+}
+
+.modal__form {
+    display: flex;
+    background-color: #64748b;
+    border-radius: 6px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    gap: 0.8rem;
+    /* width: 90%; */
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.modal__field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.25rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.modal__field input:not([type="date"]) {
+    min-width: 70%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    outline: none;
+    padding: 0.25rem;
+    color: white;
+}
+
+.close-btn {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.modal__error {
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    display: none;
+}
